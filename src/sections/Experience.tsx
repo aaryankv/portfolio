@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Section from "../components/Section";
 import { profile } from "../data/profile";
 import { FaBriefcase } from "react-icons/fa";

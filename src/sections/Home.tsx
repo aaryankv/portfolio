@@ -4,7 +4,6 @@ import Section from "../components/Section";
 import { profile } from "../data/profile";
 import { socialLinks } from "../data/socialLinks";
 import Typewriter from "../components/Typewriter";
-import heroImg from "../assets/images/thumbnail_IMG_3635.jpg";
 import { SiPython, SiTensorflow, SiAmazon, SiReact, SiTypescript } from "react-icons/si";
 
 export default function Home() {
