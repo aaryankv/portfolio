@@ -37,12 +37,17 @@ export default function Home() {
             transition={{ delay: 0.08, duration: 0.6 }}
           >
             <Typewriter
-              words={["AI & ML Enthusiast", "Full Stack Developer", "Cloud & Data Engineer"]}
+              words={[
+                "Associate Consultant",
+                "AI & ML Enthusiast",
+                "Full Stack Developer",
+                "Cloud & Data Engineer"
+              ]}
             />
           </motion.div>
 
           <div className="mt-4 flex flex-wrap gap-2">
-            {["React", "TypeScript", "Tailwind CSS", "Framer Motion"].map((t) => (
+            {["Python", "Java", "JavaScript", "AI/ML"].map((t) => (
               <span
                 key={t}
                 className="text-xs rounded-md bg-slate-100 text-slate-700 px-2 py-1 ring-1 ring-slate-200 dark:bg-white/5 dark:text-slate-300 dark:ring-white/10"
@@ -90,7 +95,7 @@ export default function Home() {
             transition={{ delay: 0.15, duration: 0.6 }}
           >
             <a href="#projects" className="btn-primary">View Projects</a>
-            <a href={socialLinks.resumeUrl} target="_blank" rel="noreferrer" className="btn-secondary">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noreferrer" className="btn-secondary">
               Download Resume
             </a>
 

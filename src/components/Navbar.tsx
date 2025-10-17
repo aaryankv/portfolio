@@ -54,9 +54,11 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleClick(e, "#home")}
-          className="text-base sm:text-lg font-semibold text-slate-900 dark:text-slate-100"
+          className="text-lg sm:text-xl font-extrabold tracking-tight"
         >
-          <span className="text-primary-500">AARYAN</span> K V
+          <span className="bg-gradient-to-r from-primary-500 via-pink-500 to-cyan-400 bg-clip-text text-transparent drop-shadow-sm">
+            Aaryan&nbsp;K&nbsp;V
+          </span>
         </a>
 
         {/* Desktop links */}

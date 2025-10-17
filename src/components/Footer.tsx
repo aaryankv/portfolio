@@ -43,7 +43,7 @@ export default function Footer() {
             <FaLinkedin className="opacity-80" /> LinkedIn
           </a>
           <a
-            href={socialLinks.resumeUrl}
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             target="_blank"
             rel="noreferrer"
             className="btn-primary text-xs"
