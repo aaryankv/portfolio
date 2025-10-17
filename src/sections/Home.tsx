@@ -4,11 +4,13 @@ import Section from "../components/Section";
 import { profile } from "../data/profile";
 import { socialLinks } from "../data/socialLinks";
 import Typewriter from "../components/Typewriter";
-import { SiPython, SiTensorflow, SiAmazon, SiReact, SiTypescript } from "react-icons/si";
+import { SiPython, SiTensorflow, SiJavascript } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <Section id="home" className="min-h-[80vh] flex items-center">
+    <Section id="home" className="relative min-h-[80vh] flex items-center">
+      <div className="pointer-events-none absolute inset-x-0 -z-10 top-24 h-64 bg-gradient-to-r from-primary-500/20 via-pink-400/10 to-cyan-400/20 blur-3xl" />
       <div className="grid gap-8 md:grid-cols-2 md:items-center">
         <div>
           <motion.p
@@ -64,10 +66,9 @@ export default function Home() {
             transition={{ delay: 0.1, duration: 0.6 }}
           >
             <SiPython className="opacity-80" size={20} />
+            <FaJava className="opacity-80" size={20} />
+            <SiJavascript className="opacity-80" size={20} />
             <SiTensorflow className="opacity-80" size={20} />
-            <SiReact className="opacity-80" size={20} />
-            <SiTypescript className="opacity-80" size={20} />
-            <SiAmazon className="opacity-80" size={20} />
           </motion.div>
 
           <motion.p
