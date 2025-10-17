@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: "Poppins", "Inter", ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    @apply bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image:
+      radial-gradient(40rem 30rem at 20% -10%, rgba(56, 189, 248, 0.10), transparent 60%),
+      radial-gradient(30rem 20rem at 80% -10%, rgba(14, 165, 233, 0.10), transparent 60%);
+  }
+
+  ::selection {
+    @apply bg-primary-500 text-white;
+  }
+
+  h1, h2, h3 {
+    @apply font-semibold tracking-tight text-slate-900 dark:text-slate-100;
+  }
+
+  a {
+    @apply transition-colors;
+    @apply text-primary-600 hover:text-primary-700;
+    @apply dark:text-primary-400 dark:hover:text-primary-300;
+  }
+}
+
+/* Subtle grid overlay for depth */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+          mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+}
+
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply container py-20 sm:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium shadow-soft transition hover:-translate-y-0.5;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-white hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply btn bg-slate-200 text-slate-900 hover:bg-slate-300;
+    @apply dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700;
+  }
+
+  .card {
+    @apply rounded-xl p-6 shadow-soft ring-1 backdrop-blur;
+    @apply bg-white/90 ring-slate-200 text-slate-800;
+    @apply dark:bg-slate-900/60 dark:ring-white/10 dark:text-slate-200;
+  }
+
+  .glass {
+    @apply ring-1 backdrop-blur;
+    @apply bg-white/70 ring-slate-200;
+    @apply dark:bg-slate-900/60 dark:ring-white/10;
+  }
+}
+
+/* Project media placeholder with animated gradient */
+.project-media {
+  position: relative;
+  border-radius: 0.75rem; /* matches rounded-xl */
+  overflow: hidden;
+  height: 9rem; /* h-36 */
+  background: linear-gradient(135deg, rgba(14,165,233,0.25), rgba(56,189,248,0.25));
+}
+.project-media::after {
+  content: "";
+  position: absolute;
+  inset: -50%;
+  background: conic-gradient(from 180deg, transparent, rgba(0,0,0,0.06), transparent 40%);
+  animation: spin 8s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(1turn); }
+}
