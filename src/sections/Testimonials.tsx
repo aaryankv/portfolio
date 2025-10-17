@@ -14,7 +14,7 @@ const testimonials = [
       "Aaryan is a dedicated team player with an eye for detail. Working alongside him made complex ML tasks smoother and more fun."
   },
   {
-    name: "Prasanna Vadahana B",
+    name: "Prasanna Vadhana B",
     role: "Senior Colleague, PwC",
     quote:
       "Aaryan’s technical maturity and quick learning abilities made him a valuable part of our integration team. His clarity in problem-solving stands out."

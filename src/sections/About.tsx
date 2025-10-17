@@ -38,7 +38,7 @@ export default function About() {
 
         {/* Summary + quick facts */}
         <div className="space-y-6">
-          <p className="text-slate-700 dark:text-slate-300">{profile.summary}</p>
+          <p className="text-slate-700 dark:text-slate-300">{profile.aboutSummary}</p>
 
           <div className="card">
             <h3 className="text-slate-900 dark:text-white text-base font-semibold">Quick Facts</h3>
@@ -64,9 +64,6 @@ export default function About() {
             </ul>
           </div>
 
-          <div className="text-sm text-slate-600 dark:text-slate-400">
-            Skills, Experience, Education, Certificates, Testimonials, Blog, and Awards have their own sections below for easier navigation and focus.
-          </div>
         </div>
       </div>
     </Section>

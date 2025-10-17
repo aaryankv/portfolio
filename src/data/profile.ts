@@ -9,6 +9,8 @@ export const profile = {
   },
   summary:
     "Aspiring AI & ML Enthusiast | Problem Solver | Proficient in Java & Python | Experienced in AR/VR Projects | Skilled in Data Structures & Algorithms | Collaborative Team Player | Data Science Enthusiast | Dedicated to Building a Better Future for the World.",
+  aboutSummary:
+    "Aspiring AI & ML specialist with a strong foundation in Java and Python programming. Well-versed in full stack development, with hands-on experience across both front-end and back-end technologies. Skilled in data structures, algorithms, and data science concepts, with practical exposure to AR/VR projects. Passionate problem solver and collaborative team player, dedicated to leveraging advanced technology and analytical thinking to develop innovative solutions for real-world challenges.",
   education: [
     {
       degree: "Bachelor of Technology: Artificial Intelligence & Machine Learning",
