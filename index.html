@@ -18,7 +18,18 @@
     <meta name="description" content="Portfolio of Aaryan K V — Software Engineer crafting modern, performant, and accessible web experiences." />
     <meta name="theme-color" content="#0ea5e9" />
 
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Favicons: multiple paths + cache-bust to beat favicon caching -->
+    <!-- Relative to base (/portfolio/) -->
+    <link rel="icon" href="akvlogo.jpg?v=4" sizes="32x32" />
+    <link rel="icon" href="akvlogo.jpg?v=4" sizes="any" />
+    <!-- Explicit base path -->
+    <link rel="icon" href="/portfolio/akvlogo.jpg?v=4" sizes="any" />
+    <link rel="shortcut icon" href="/portfolio/akvlogo.jpg?v=4" />
+    <link rel="apple-touch-icon" href="/portfolio/akvlogo.jpg?v=4" />
+    <!-- Vite BASE_URL variant -->
+    <link rel="icon" href="%BASE_URL%akvlogo.jpg?v=4" sizes="any" />
+    <!-- Root fallback -->
+    <link rel="icon" href="/akvlogo.jpg?v=4" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
