@@ -139,11 +139,11 @@ export default function Home() {
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-violet-500/30 to-indigo-400/20 blur-2xl" />
           
           <div className="relative h-full w-full rounded-2xl ring-1 ring-white/10 bg-slate-900/50 backdrop-blur flex items-center justify-center overflow-hidden">
-            <img
-              src="/profile.jpg"
-              alt={`${profile.name} profile`}
-              className="h-full w-full object-cover object-top rounded-2xl"
-            />
+              <img
+                src={`${import.meta.env.BASE_URL}profile.jpg`}
+                alt={`${profile.name} profile`}
+                className="h-full w-full object-cover object-top rounded-2xl"
+              />
           </div>
         </div>
 
